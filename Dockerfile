@@ -4,6 +4,8 @@ RUN apk add --no-cache \
     openssh-client \
     ca-certificates
 
+RUN mkdir -p /root/.ssh
+
 ENV SRC=/root/
 ENV DST=/tmp
 ENV SCP_ARGS=-r
